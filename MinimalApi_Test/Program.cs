@@ -392,12 +392,12 @@ users.MapPost("/search", UserHandlers.SearchUsers)
     .ProducesProblem(500);
 
 // PATCH /api/users/{id}
-users.MapPatch("/{id:int}", UserHandlers.PatchUser)
-    .WithName("PatchUser")
-    // .Produces<ResultCustom<UserDto>>(200)
-    .ProducesProblem(400)
-    .ProducesProblem(404)
-    .ProducesProblem(500);
+// users.MapPatch("/{id:int}", UserHandlers.PatchUser)
+//     .WithName("PatchUser")
+//     // .Produces<ResultCustom<UserDto>>(200)
+//     .ProducesProblem(400)
+//     .ProducesProblem(404)
+//     .ProducesProblem(500);
 
 #endregion
 
