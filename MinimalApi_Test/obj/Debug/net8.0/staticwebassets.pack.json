@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\download\\TextFile.txt",
+      "PackagePath": "staticwebassets\\download\\TextFile.txt"
+    },
+    {
+      "Id": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.jpg",
+      "PackagePath": "staticwebassets\\uploads\\01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\023fba0c-62e8-4e9d-953c-db91525a69cd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\023fba0c-62e8-4e9d-953c-db91525a69cd.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\03c51787-50b2-4462-b75a-8e0811e8cacc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\03c51787-50b2-4462-b75a-8e0811e8cacc.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\1dfe9433-4ceb-46d3-b732-d8acfdb2242c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1dfe9433-4ceb-46d3-b732-d8acfdb2242c.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\93b18909-f690-4846-9b6e-7b89d1473ca3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\93b18909-f690-4846-9b6e-7b89d1473ca3.jpg"
+    },
+    {
+      "Id": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\a571a729-5c0e-43ef-a5f7-ff96e58f757d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a571a729-5c0e-43ef-a5f7-ff96e58f757d.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MinimalApi_Test.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MinimalApi_Test.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MinimalApi_Test.props",
+      "PackagePath": "build\\MinimalApi_Test.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MinimalApi_Test.props",
+      "PackagePath": "buildMultiTargeting\\MinimalApi_Test.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MinimalApi_Test.props",
+      "PackagePath": "buildTransitive\\MinimalApi_Test.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

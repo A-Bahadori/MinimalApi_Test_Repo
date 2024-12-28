@@ -1,0 +1,846 @@
+{
+  "Version": 1,
+  "Hash": "UKrJ6ukuQHByK/KlMIVYrSADsjEJ38GkQu+BLjPiGFc=",
+  "Source": "MinimalApi_Test",
+  "BasePath": "_content/MinimalApi_Test",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MinimalApi_Test\\wwwroot",
+      "Source": "MinimalApi_Test",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\download\\TextFile.txt",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "download/TextFile#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qfl7tl0m78",
+      "Integrity": "umbzesOxdmOqPzyZoUp4oxcYT320eZpL8O+by4/448Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\download\\TextFile.txt"
+    },
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.jpg",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "uploads/01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lan9hw5ma1",
+      "Integrity": "Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.jpg"
+    },
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\023fba0c-62e8-4e9d-953c-db91525a69cd.jpg",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "uploads/023fba0c-62e8-4e9d-953c-db91525a69cd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lan9hw5ma1",
+      "Integrity": "Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\023fba0c-62e8-4e9d-953c-db91525a69cd.jpg"
+    },
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\03c51787-50b2-4462-b75a-8e0811e8cacc.jpg",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "uploads/03c51787-50b2-4462-b75a-8e0811e8cacc#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "guyfz91awf",
+      "Integrity": "2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\03c51787-50b2-4462-b75a-8e0811e8cacc.jpg"
+    },
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\1dfe9433-4ceb-46d3-b732-d8acfdb2242c.jpg",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "uploads/1dfe9433-4ceb-46d3-b732-d8acfdb2242c#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "guyfz91awf",
+      "Integrity": "2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\1dfe9433-4ceb-46d3-b732-d8acfdb2242c.jpg"
+    },
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "uploads/1f3013b6-cc2f-4ca3-a913-167f8cc81347#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lan9hw5ma1",
+      "Integrity": "Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg"
+    },
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\93b18909-f690-4846-9b6e-7b89d1473ca3.jpg",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "uploads/93b18909-f690-4846-9b6e-7b89d1473ca3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "guyfz91awf",
+      "Integrity": "2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\93b18909-f690-4846-9b6e-7b89d1473ca3.jpg"
+    },
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\a571a729-5c0e-43ef-a5f7-ff96e58f757d.jpg",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "uploads/a571a729-5c0e-43ef-a5f7-ff96e58f757d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lan9hw5ma1",
+      "Integrity": "Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a571a729-5c0e-43ef-a5f7-ff96e58f757d.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "download/TextFile.qfl7tl0m78.txt",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\download\\TextFile.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"umbzesOxdmOqPzyZoUp4oxcYT320eZpL8O+by4/448Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:37:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qfl7tl0m78"
+        },
+        {
+          "Name": "label",
+          "Value": "download/TextFile.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-umbzesOxdmOqPzyZoUp4oxcYT320eZpL8O+by4/448Y="
+        }
+      ]
+    },
+    {
+      "Route": "download/TextFile.txt",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\download\\TextFile.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"umbzesOxdmOqPzyZoUp4oxcYT320eZpL8O+by4/448Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 11:37:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-umbzesOxdmOqPzyZoUp4oxcYT320eZpL8O+by4/448Y="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:17:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.lan9hw5ma1.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:17:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lan9hw5ma1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/01e3bcd7-3ec1-4aab-8fd2-0ae2798f4997.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/023fba0c-62e8-4e9d-953c-db91525a69cd.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\023fba0c-62e8-4e9d-953c-db91525a69cd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:13:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/023fba0c-62e8-4e9d-953c-db91525a69cd.lan9hw5ma1.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\023fba0c-62e8-4e9d-953c-db91525a69cd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:13:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lan9hw5ma1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/023fba0c-62e8-4e9d-953c-db91525a69cd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/03c51787-50b2-4462-b75a-8e0811e8cacc.guyfz91awf.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\03c51787-50b2-4462-b75a-8e0811e8cacc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:17:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "guyfz91awf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/03c51787-50b2-4462-b75a-8e0811e8cacc.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/03c51787-50b2-4462-b75a-8e0811e8cacc.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\03c51787-50b2-4462-b75a-8e0811e8cacc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 11:17:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1dfe9433-4ceb-46d3-b732-d8acfdb2242c.guyfz91awf.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\1dfe9433-4ceb-46d3-b732-d8acfdb2242c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 05:40:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "guyfz91awf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/1dfe9433-4ceb-46d3-b732-d8acfdb2242c.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1dfe9433-4ceb-46d3-b732-d8acfdb2242c.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\1dfe9433-4ceb-46d3-b732-d8acfdb2242c.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 05:40:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 05:39:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/1f3013b6-cc2f-4ca3-a913-167f8cc81347.lan9hw5ma1.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 05:39:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lan9hw5ma1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/93b18909-f690-4846-9b6e-7b89d1473ca3.guyfz91awf.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\93b18909-f690-4846-9b6e-7b89d1473ca3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 05:40:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "guyfz91awf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/93b18909-f690-4846-9b6e-7b89d1473ca3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/93b18909-f690-4846-9b6e-7b89d1473ca3.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\93b18909-f690-4846-9b6e-7b89d1473ca3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 05:40:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a571a729-5c0e-43ef-a5f7-ff96e58f757d.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\a571a729-5c0e-43ef-a5f7-ff96e58f757d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 05:40:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a571a729-5c0e-43ef-a5f7-ff96e58f757d.lan9hw5ma1.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\a571a729-5c0e-43ef-a5f7-ff96e58f757d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 05:40:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lan9hw5ma1"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a571a729-5c0e-43ef-a5f7-ff96e58f757d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    }
+  ]
+}

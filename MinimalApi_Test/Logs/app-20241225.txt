@@ -1,0 +1,148 @@
+2024-12-25T15:38:46.8834830+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-25T15:38:47.3702662+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-25T15:38:47.3726741+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-25T15:38:47.3787666+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-25T15:38:47.3813042+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-25T15:38:47.3827489+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-25T15:38:47.8293095+03:30 0HN94RJHFPOU7:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-25T15:38:48.0018525+03:30 0HN94RJHFPOU7:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 174.0034ms (74253ad3)
+2024-12-25T15:38:48.4456698+03:30 0HN94RJHFPOU7:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-25T15:38:48.4582112+03:30 0HN94RJHFPOU7:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-25T15:38:48.6504787+03:30 0HN94RJHFPOU7:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 204.7182ms (74253ad3)
+2024-12-25T15:39:09.3634549+03:30 0HN94RJHFPOU9:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - "application/json" 78 (d509f86a)
+2024-12-25T15:39:09.5164992+03:30 0HN94RJHFPOU9:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/login => Login"' (500cc934)
+2024-12-25T15:39:10.6870240+03:30 0HN94RJHFPOU9:00000001 [INF] Login attempt for user: admin@localhost.com (3c8dd274)
+2024-12-25T15:39:11.6940913+03:30 0HN94RJHFPOU9:00000001 [INF] Executed DbCommand ("77"ms) [Parameters=["@__username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__username_0" (0723d8ff)
+2024-12-25T15:39:11.8279551+03:30 0HN94RJHFPOU9:00000001 [INF] Successful login for user: admin@localhost.com (d8a9e7cb)
+2024-12-25T15:39:11.8331317+03:30 0HN94RJHFPOU9:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-25T15:39:11.8345501+03:30 0HN94RJHFPOU9:00000001 [INF] Writing value of type '"<>f__AnonymousType0`1"' as Json. (785b1510)
+2024-12-25T15:39:11.8393396+03:30 0HN94RJHFPOU9:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/login => Login"' (99874f2b)
+2024-12-25T15:39:11.8499288+03:30 0HN94RJHFPOU9:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - 200 null "application/json; charset=utf-8" 2486.3788ms (74253ad3)
+2024-12-25T15:39:25.1150850+03:30 0HN94RJHFPOU9:00000002 [INF] Request starting "HTTP/1.1" "GET" "https"://"localhost:7298""""/api/users""" - null null (d509f86a)
+2024-12-25T15:39:25.1647137+03:30 0HN94RJHFPOU9:00000002 [INF] Failed to validate the token. (616bef97)
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '2024-12-25 11:26:04', Current time (UTC): '2024-12-25 12:09:25'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-12-25T15:39:25.1879543+03:30 0HN94RJHFPOU9:00000002 [INF] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '2024-12-25 11:26:04', Current time (UTC): '2024-12-25 12:09:25'." (48071232)
+2024-12-25T15:39:25.1977844+03:30 0HN94RJHFPOU9:00000002 [INF] Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)" (92d7f7d3)
+2024-12-25T15:39:25.2043157+03:30 0HN94RJHFPOU9:00000002 [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2024-12-25T15:39:25.2046103+03:30 0HN94RJHFPOU9:00000002 [INF] Request finished "HTTP/1.1" "GET" "https"://"localhost:7298""""/api/users""" - 401 0 null 89.5052ms (74253ad3)
+2024-12-25T15:39:44.1888072+03:30 0HN94RJHFPOU9:00000003 [INF] Request starting "HTTP/1.1" "GET" "https"://"localhost:7298""""/api/users""" - null null (d509f86a)
+2024-12-25T15:39:44.2025378+03:30 0HN94RJHFPOU9:00000003 [INF] Executing endpoint '"HTTP: GET /api/users/ => GetAllUsers"' (500cc934)
+2024-12-25T15:39:44.2256626+03:30 0HN94RJHFPOU9:00000003 [INF] Request received: Get all users (0b6885e7)
+2024-12-25T15:39:44.2383125+03:30 0HN94RJHFPOU9:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-25T15:39:44.2587390+03:30 0HN94RJHFPOU9:00000003 [INF] Successfully retrieved 6 users (3c017c86)
+2024-12-25T15:39:44.2589417+03:30 0HN94RJHFPOU9:00000003 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-25T15:39:44.2643765+03:30 0HN94RJHFPOU9:00000003 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-25T15:39:44.2698804+03:30 0HN94RJHFPOU9:00000003 [INF] Executed endpoint '"HTTP: GET /api/users/ => GetAllUsers"' (99874f2b)
+2024-12-25T15:39:44.2704779+03:30 0HN94RJHFPOU9:00000003 [INF] Request finished "HTTP/1.1" "GET" "https"://"localhost:7298""""/api/users""" - 200 null "application/json; charset=utf-8" 81.637ms (74253ad3)
+2024-12-25T15:41:45.0892474+03:30 0HN94RJHFPOUB:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users""" - "application/json" 140 (d509f86a)
+2024-12-25T15:41:45.0903906+03:30 0HN94RJHFPOUB:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/ => CreateUser"' (500cc934)
+2024-12-25T15:41:45.1003913+03:30 0HN94RJHFPOUB:00000001 [INF] Request received: Create user with username AmirReza (6f613991)
+2024-12-25T15:41:45.1841057+03:30 0HN94RJHFPOUB:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__createUserDto_Username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__createUserDto_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-12-25T15:41:45.2023163+03:30 0HN94RJHFPOUB:00000001 [WRN] Failed to create user: Username already exists (ef3adbde)
+2024-12-25T15:41:45.2050215+03:30 0HN94RJHFPOUB:00000001 [INF] Setting HTTP status code 500. (55f20fcf)
+2024-12-25T15:41:45.2148785+03:30 0HN94RJHFPOUB:00000001 [INF] Writing value of type '"ProblemDetails"' as Json. (785b1510)
+2024-12-25T15:41:45.2169302+03:30 0HN94RJHFPOUB:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/ => CreateUser"' (99874f2b)
+2024-12-25T15:41:45.2170791+03:30 0HN94RJHFPOUB:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users""" - 500 null "application/problem+json" 127.8398ms (74253ad3)
+2024-12-25T15:42:04.6209192+03:30 0HN94RJHFPOUB:00000002 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users""" - "application/json" 141 (d509f86a)
+2024-12-25T15:42:04.6213545+03:30 0HN94RJHFPOUB:00000002 [INF] Executing endpoint '"HTTP: POST /api/users/ => CreateUser"' (500cc934)
+2024-12-25T15:42:04.6236144+03:30 0HN94RJHFPOUB:00000002 [INF] Request received: Create user with username AmirReza2 (96ab3aa2)
+2024-12-25T15:42:04.6323105+03:30 0HN94RJHFPOUB:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__createUserDto_Username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__createUserDto_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-12-25T15:42:04.8705586+03:30 0HN94RJHFPOUB:00000002 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'. (f90d6462)
+2024-12-25T15:42:04.8796624+03:30 0HN94RJHFPOUB:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200), @p3='?' (DbType = Boolean), @p4='?' (Size = 200), @p5='?' (DbType = DateTime2), @p6='?' (Size = 200), @p7='?' (Size = 200), @p8='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [DeletedAt], [FirstName], [IsDelete], [LastName], [ModifiedAt], [PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2024-12-25T15:42:04.9193909+03:30 0HN94RJHFPOUB:00000002 [INF] Successfully created user with ID 15 (ce707d29)
+2024-12-25T15:42:04.9205028+03:30 0HN94RJHFPOUB:00000002 [INF] Setting HTTP status code 201. (55f20fcf)
+2024-12-25T15:42:04.9209359+03:30 0HN94RJHFPOUB:00000002 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-25T15:42:04.9215182+03:30 0HN94RJHFPOUB:00000002 [INF] Executed endpoint '"HTTP: POST /api/users/ => CreateUser"' (99874f2b)
+2024-12-25T15:42:04.9216621+03:30 0HN94RJHFPOUB:00000002 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users""" - 201 null "application/json; charset=utf-8" 300.7569ms (74253ad3)
+2024-12-25T16:33:03.4889137+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-25T16:33:03.9936042+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-25T16:33:03.9953227+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-25T16:33:04.0009334+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-25T16:33:04.0029456+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-25T16:33:04.0043119+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-25T16:33:04.4272245+03:30 0HN94SHS153QT:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-25T16:33:04.5826254+03:30 0HN94SHS153QT:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 156.717ms (74253ad3)
+2024-12-25T16:33:04.9472184+03:30 0HN94SHS153QT:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-25T16:33:04.9596813+03:30 0HN94SHS153QT:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-25T16:33:05.1671902+03:30 0HN94SHS153QT:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 219.9347ms (74253ad3)
+2024-12-25T16:33:14.3189891+03:30 0HN94SHS153QV:00000001 [INF] Request starting "HTTP/1.1" "GET" "https"://"localhost:7298""""/api/users""" - null null (d509f86a)
+2024-12-25T16:33:14.5535862+03:30 0HN94SHS153QV:00000001 [INF] Executing endpoint '"HTTP: GET /api/users/ => GetAllUsers"' (500cc934)
+2024-12-25T16:33:15.6189641+03:30 0HN94SHS153QV:00000001 [INF] Request received: Get all users (0b6885e7)
+2024-12-25T16:33:16.4178406+03:30 0HN94SHS153QV:00000001 [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-25T16:33:16.4844185+03:30 0HN94SHS153QV:00000001 [INF] Successfully retrieved 7 users (b7217efc)
+2024-12-25T16:33:16.4908359+03:30 0HN94SHS153QV:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-25T16:33:16.4961828+03:30 0HN94SHS153QV:00000001 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-25T16:33:16.5047231+03:30 0HN94SHS153QV:00000001 [INF] Executed endpoint '"HTTP: GET /api/users/ => GetAllUsers"' (99874f2b)
+2024-12-25T16:33:16.5166406+03:30 0HN94SHS153QV:00000001 [INF] Request finished "HTTP/1.1" "GET" "https"://"localhost:7298""""/api/users""" - 200 null "application/json; charset=utf-8" 2197.4698ms (74253ad3)
+2024-12-25T16:33:34.9387343+03:30 0HN94SHS153QV:00000002 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users""" - "application/json" 141 (d509f86a)
+2024-12-25T16:33:34.9463580+03:30 0HN94SHS153QV:00000002 [INF] Executing endpoint '"HTTP: POST /api/users/ => CreateUser"' (500cc934)
+2024-12-25T16:33:34.9768032+03:30 0HN94SHS153QV:00000002 [INF] Request received: Create user with username AmirReza3 (a4e55716)
+2024-12-25T16:33:35.1189178+03:30 0HN94SHS153QV:00000002 [INF] Executed DbCommand ("32"ms) [Parameters=["@__createUserDto_Username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__createUserDto_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-12-25T16:33:35.3867083+03:30 0HN94SHS153QV:00000002 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'. (f90d6462)
+2024-12-25T16:33:35.4010932+03:30 0HN94SHS153QV:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 200), @p3='?' (DbType = Boolean), @p4='?' (Size = 200), @p5='?' (DbType = DateTime2), @p6='?' (Size = 200), @p7='?' (Size = 200), @p8='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [DeletedAt], [FirstName], [IsDelete], [LastName], [ModifiedAt], [PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2024-12-25T16:33:35.4695471+03:30 0HN94SHS153QV:00000002 [INF] Successfully created user with ID 16 (947f8948)
+2024-12-25T16:33:35.4703214+03:30 0HN94SHS153QV:00000002 [INF] Setting HTTP status code 201. (55f20fcf)
+2024-12-25T16:33:35.4709770+03:30 0HN94SHS153QV:00000002 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-25T16:33:35.4728472+03:30 0HN94SHS153QV:00000002 [INF] Executed endpoint '"HTTP: POST /api/users/ => CreateUser"' (99874f2b)
+2024-12-25T16:33:35.4733477+03:30 0HN94SHS153QV:00000002 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users""" - 201 null "application/json; charset=utf-8" 534.5998ms (74253ad3)
+2024-12-25T16:33:43.2807873+03:30 0HN94SHS153QV:00000003 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users""" - "application/json" 141 (d509f86a)
+2024-12-25T16:33:43.2823051+03:30 0HN94SHS153QV:00000003 [INF] Executing endpoint '"HTTP: POST /api/users/ => CreateUser"' (500cc934)
+2024-12-25T16:33:43.2891648+03:30 0HN94SHS153QV:00000003 [INF] Request received: Create user with username AmirReza3 (a4e55716)
+2024-12-25T16:33:43.2981459+03:30 0HN94SHS153QV:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__createUserDto_Username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__createUserDto_Username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-12-25T16:33:43.3077834+03:30 0HN94SHS153QV:00000003 [WRN] Failed to create user: Username already exists (ef3adbde)
+2024-12-25T16:33:43.3097118+03:30 0HN94SHS153QV:00000003 [INF] Setting HTTP status code 500. (55f20fcf)
+2024-12-25T16:33:43.3178361+03:30 0HN94SHS153QV:00000003 [INF] Writing value of type '"ProblemDetails"' as Json. (785b1510)
+2024-12-25T16:33:43.3197347+03:30 0HN94SHS153QV:00000003 [INF] Executed endpoint '"HTTP: POST /api/users/ => CreateUser"' (99874f2b)
+2024-12-25T16:33:43.3200212+03:30 0HN94SHS153QV:00000003 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users""" - 500 null "application/problem+json" 39.1857ms (74253ad3)
