@@ -125,9 +125,9 @@ namespace MinimalApi_Test.Handlers.User
                 return TypedResults.Unauthorized();
             }
 
-            var token = JwtSecurity.GenerateJwtToken(request.Username, result.Data.Role ?? "User", configuration);
+            var token = JwtSecurity.GenerateJwtToken(result.Data.User, configuration);
             LoggerService.LogInformation($"Successful login for user: {request.Username}");
-            return TypedResults.Ok(new { Token = token });
+            return TypedResults.Ok(new LoginResponse { AccessToken = token, UserDto = result.Data.User });
         }
 
         [Authorize(Roles = "Admin")]
@@ -146,7 +146,7 @@ namespace MinimalApi_Test.Handlers.User
             }
 
             LoggerService.LogInformation($"Successfully searched users. Found {result.Data.Items.Count} items");
-            return TypedResults.Ok(new SearchUsersResult(result.Data));
+            return TypedResults.Ok(result);
         }
 
         [Authorize(Roles = "Admin")]

@@ -670,16 +670,6 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/BooleanResultCustom"
-                }
-              }
-            }
-          },
           "404": {
             "description": "Not Found",
             "content": {
@@ -720,16 +710,6 @@
           "required": true
         },
         "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/BooleanStringValueTupleResultCustom"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Bad Request",
             "content": {
@@ -770,16 +750,6 @@
           "required": true
         },
         "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SearchUsersResult"
-                }
-              }
-            }
-          },
           "400": {
             "description": "Bad Request",
             "content": {
@@ -806,47 +776,6 @@
   },
   "components": {
     "schemas": {
-      "BooleanResultCustom": {
-        "type": "object",
-        "properties": {
-          "isSuccess": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "data": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "error": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "BooleanStringValueTuple": {
-        "type": "object",
-        "additionalProperties": false
-      },
-      "BooleanStringValueTupleResultCustom": {
-        "type": "object",
-        "properties": {
-          "isSuccess": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "data": {
-            "$ref": "#/components/schemas/BooleanStringValueTuple"
-          },
-          "error": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
-          }
-        },
-        "additionalProperties": false
-      },
       "CreateUserDto": {
         "type": "object",
         "properties": {
@@ -982,23 +911,6 @@
             "format": "int32"
           },
           "pageSize": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "SearchUsersResult": {
-        "type": "object",
-        "properties": {
-          "items": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserDto"
-            },
-            "nullable": true
-          },
-          "totalCount": {
             "type": "integer",
             "format": "int32"
           }

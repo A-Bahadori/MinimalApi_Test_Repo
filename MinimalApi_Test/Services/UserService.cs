@@ -293,7 +293,7 @@ namespace MinimalApi_Test.Services
             }
         }
 
-        public async Task<ResultCustom<(bool IsValid, string? Role)>> ValidateCredentialsAsync(string username, string password, CancellationToken cancellationToken)
+        public async Task<ResultCustom<(bool IsValid, UserDto User)>> ValidateCredentialsAsync(string username, string password, CancellationToken cancellationToken)
         {
             try
             {
@@ -305,20 +305,22 @@ namespace MinimalApi_Test.Services
 
                 if (user == null)
                 {
-                    return ResultCustom<(bool, string?)>.Failure("Invalid credentials");
+                    return ResultCustom<(bool, UserDto User)>.Failure("Invalid credentials");
                 }
 
                 var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, password);
 
-                return ResultCustom<(bool, string?)>.Success((result == PasswordVerificationResult.Success, user.Role));
+                var userDto = _mapper.Map<UserDto>(user);
+                
+                return ResultCustom<(bool, UserDto User)>.Success((result == PasswordVerificationResult.Success, userDto));
             }
             catch (Exception ex)
             {
-                return ResultCustom<(bool, string?)>.Failure($"Error validating credentials: {ex.Message}");
+                return ResultCustom<(bool, UserDto User)>.Failure($"Error validating credentials: {ex.Message}");
             }
         }
 
-        public async Task<ResultCustom<(List<UserDto> Items, int TotalCount)>> SearchUsersAsync(
+        public async Task<ResultCustom<SearchUsersResult>> SearchUsersAsync(
             SearchUserDto searchDto,
             CancellationToken cancellationToken)
         {
@@ -417,12 +419,13 @@ namespace MinimalApi_Test.Services
                     .Take(searchDto.PageSize)
                     .ToList();
 
-                return ResultCustom<(List<UserDto> Items, int TotalCount)>.Success(
-                    (_mapper.Map<List<UserDto>>(pagedUsers), totalCount));
+                var searchUserResult = new SearchUsersResult(_mapper.Map<List<UserDto>>(pagedUsers),totalCount,searchDto.PageNumber,searchDto.PageSize);
+                
+                return ResultCustom<SearchUsersResult>.Success(searchUserResult);
             }
             catch (Exception ex)
             {
-                return ResultCustom<(List<UserDto> Items, int TotalCount)>.Failure(
+                return ResultCustom<SearchUsersResult>.Failure(
                     $"Error searching users: {ex.Message}");
             }
         }

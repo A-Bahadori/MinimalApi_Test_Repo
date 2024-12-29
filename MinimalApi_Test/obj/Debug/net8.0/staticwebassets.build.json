@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UKrJ6ukuQHByK/KlMIVYrSADsjEJ38GkQu+BLjPiGFc=",
+  "Hash": "+s57Ii/+7DIGBdYUcHN6TId8EpUDAHmEvmM0ouThlco=",
   "Source": "MinimalApi_Test",
   "BasePath": "_content/MinimalApi_Test",
   "Mode": "Default",
@@ -141,6 +141,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\1f3013b6-cc2f-4ca3-a913-167f8cc81347.jpg"
+    },
+    {
+      "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\7e0b6bb4-14ab-4624-a9f4-b31a949460f8.jpg",
+      "SourceId": "MinimalApi_Test",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\",
+      "BasePath": "_content/MinimalApi_Test",
+      "RelativePath": "uploads/7e0b6bb4-14ab-4624-a9f4-b31a949460f8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "guyfz91awf",
+      "Integrity": "2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\7e0b6bb4-14ab-4624-a9f4-b31a949460f8.jpg"
     },
     {
       "Identity": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\93b18909-f690-4846-9b6e-7b89d1473ca3.jpg",
@@ -675,6 +696,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Ld9R63mDAKQUCNvr9K4mNmPLeM29V9ypcngxhORIDvY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7e0b6bb4-14ab-4624-a9f4-b31a949460f8.guyfz91awf.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\7e0b6bb4-14ab-4624-a9f4-b31a949460f8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 10:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "guyfz91awf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/7e0b6bb4-14ab-4624-a9f4-b31a949460f8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/7e0b6bb4-14ab-4624-a9f4-b31a949460f8.jpg",
+      "AssetFile": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\wwwroot\\uploads\\7e0b6bb4-14ab-4624-a9f4-b31a949460f8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 10:29:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2EoK0gaYnkWGrh2/iq/gLn0oPOrukMlwvTVzRKVxqTk="
         }
       ]
     },

@@ -18,6 +18,7 @@ using MinimalApi_Test.Services.Interfaces;
 using MinimalApi_Test.Validators.User;
 using System.Net;
 using System.Text;
+using Microsoft.OpenApi.Models;
 
 #region Containers
 
@@ -29,8 +30,17 @@ builder.Services.Configure<FormOptions>(options =>
 });
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// builder.Services.AddSwaggerGen();
+AddSwagger(builder.Services);
 builder.Services.AddAntiforgery();
+
+builder.Services.AddCors(o =>
+{
+    o.AddPolicy("CorsPolicy", b =>
+        b.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+});
 
 // Add logging
 builder.Logging.ClearProviders();
@@ -373,21 +383,21 @@ users.MapPut("/{id:int}", UserHandlers.UpdateUser)
 // DELETE /api/users/{id}
 users.MapDelete("/{id:int}", UserHandlers.DeleteUser)
     .WithName("DeleteUser")
-    // .Produces<ResultCustom<bool>>(200)
+     .Produces<ResultCustom<bool>>(200)
     .ProducesProblem(404)
     .ProducesProblem(500);
 
 // POST /api/users/login
 users.MapPost("/login", UserHandlers.Login)
-    .WithName("ValidateCredentials")
-    // .Produces<ResultCustom<(bool IsValid, string? Role)>>(200)
+    .WithName("LoginUser")
+    .Produces<LoginResponse>(200)
     .ProducesProblem(400)
     .ProducesProblem(500);
 
 //POST /api/users/search
 users.MapPost("/search", UserHandlers.SearchUsers)
     .WithName("SearchUsers")
-    // .Produces<SearchUsersResult>(200)
+    .Produces<ResultCustom<SearchUsersResult>>(200)
     .ProducesProblem(400)
     .ProducesProblem(500);
 
@@ -404,3 +414,50 @@ users.MapPost("/search", UserHandlers.SearchUsers)
 #endregion
 
 app.Run();
+
+#region Utilities
+
+void AddSwagger(IServiceCollection services)
+{
+    services.AddSwaggerGen(o =>
+    {
+        o.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+        {
+            Description = @"JWT Authorization header using the Bearer scheme. 
+                      Enter 'Bearer' [space] and then your token in the text input below.
+                      Example: 'Bearer 1234sddsw'",
+            Name = "Authorization",
+            In = ParameterLocation.Header,
+            Type = SecuritySchemeType.ApiKey,
+            Scheme = "Bearer"
+        });
+
+        o.AddSecurityRequirement(new OpenApiSecurityRequirement()
+        {
+            {
+                new OpenApiSecurityScheme()
+                {
+                    Reference = new OpenApiReference()
+                    {
+                        Type = ReferenceType.SecurityScheme,
+                        Id = "Bearer"
+                    },
+                    Scheme = "oauth2",
+                    Name = "Bearer",
+                    In = ParameterLocation.Header
+                },
+                new List<string>()
+            }
+        });
+
+        o.SwaggerDoc("v1", new OpenApiInfo()
+        {
+            Version = "v1",
+            Title = "Rayvarz Api"
+        });
+
+        //o.UseInlineDefinitionsForEnums();
+    });
+}
+
+#endregion

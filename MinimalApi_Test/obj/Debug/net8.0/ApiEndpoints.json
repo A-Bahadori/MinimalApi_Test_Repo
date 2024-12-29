@@ -581,13 +581,6 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MinimalApi_Test.Result.ResultCustom\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
         "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [
           "application/problem\u002Bjson"
@@ -623,13 +616,6 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "MinimalApi_Test.Result.ResultCustom\u00601[[System.ValueTuple\u00602[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
         "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [
           "application/problem\u002Bjson"
@@ -664,13 +650,6 @@
       }
     ],
     "ReturnTypes": [
-      {
-        "Type": "MinimalApi_Test.Result.SearchUsersResult",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
       {
         "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
         "MediaTypes": [

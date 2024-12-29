@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1259E786-1D12-48BB-AB4F-9B937AA6E39C}|MinimalApi_Test\\MinimalApi_Test.csproj|d:\\programming\\c#_projects\\asp.net_core\\minimal api\\minimalapi_test\\minimalapi_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1259E786-1D12-48BB-AB4F-9B937AA6E39C}|MinimalApi_Test\\MinimalApi_Test.csproj|solutionrelative:minimalapi_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\Program.cs",
-              "RelativeDocumentMoniker": "MinimalApi_Test\\Program.cs",
-              "ToolTip": "D:\\Programming\\C#_Projects\\ASP.NET_Core\\Minimal Api\\MinimalApi_Test\\MinimalApi_Test\\Program.cs",
-              "RelativeToolTip": "MinimalApi_Test\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T12:32:11.237Z",
-              "EditorCaption": ""
             }
           ]
         }
