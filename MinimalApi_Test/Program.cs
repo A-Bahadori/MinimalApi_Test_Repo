@@ -428,28 +428,6 @@ users.MapPost("/search", UserHandlers.SearchUsers)
 
 #endregion
 
-#region MiniProfilerTests
-
-app.MapGet("/miniprofiler/", () =>
-{
-    using (MiniProfiler.Current.Step("Processing Root Request"))
-    {
-        return "Hello, MiniProfiler with Minimal API!";
-    }
-});
-
-// تست Endpoint دیگر
-app.MapGet("/miniprofiler/slow", async () =>
-{
-    using (MiniProfiler.Current.Step("Simulating Slow Endpoint"))
-    {
-        await Task.Delay(2000); // شبیه‌سازی عملیات زمان‌بر
-        return "This was a slow request!";
-    }
-});
-
-#endregion
-
 #endregion
 
 app.Run();
