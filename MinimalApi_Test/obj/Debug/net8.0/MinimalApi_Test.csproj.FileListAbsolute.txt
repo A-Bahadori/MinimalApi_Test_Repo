@@ -168,3 +168,7 @@ D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_T
 D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\bin\Debug\net8.0\Serilog.Sinks.File.dll
 D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\obj\Debug\net8.0\MinimalApi_Test.sourcelink.json
+D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\bin\Debug\net8.0\MiniProfiler.AspNetCore.dll
+D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\bin\Debug\net8.0\MiniProfiler.AspNetCore.Mvc.dll
+D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\bin\Debug\net8.0\MiniProfiler.Shared.dll
+D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\bin\Debug\net8.0\MiniProfiler.EntityFrameworkCore.dll

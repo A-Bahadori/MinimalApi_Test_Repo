@@ -9,11 +9,28 @@ namespace MinimalApi_Test.Context
     public class AppDbContext:DbContext
     {
         #region Constractor
-
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        
+        private readonly IConfiguration _configuration;
+        public AppDbContext(
+            DbContextOptions<AppDbContext> options,
+            IConfiguration configuration) : base(options)
+        {
+            _configuration = configuration;
+        }
 
         #endregion
 
+        #region OnConfiguration
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            
+            optionsBuilder.AddMiniProfilerToDbContext();
+        }
+
+        #endregion
+        
         #region User
 
         public DbSet<User> Users { get; set; }

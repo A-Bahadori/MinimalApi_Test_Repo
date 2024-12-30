@@ -6,6 +6,7 @@ using MinimalApi_Test.Result;
 using MinimalApi_Test.Security;
 using MinimalApi_Test.Services;
 using MinimalApi_Test.Services.Interfaces;
+using StackExchange.Profiling;
 
 namespace MinimalApi_Test.Handlers.User
 {
@@ -16,17 +17,20 @@ namespace MinimalApi_Test.Handlers.User
             IUserService userService,
             CancellationToken cancellationToken)
         {
-            LoggerService.LogInformation("Request received: Get all users");
-            var result = await userService.GetAllUsersAsync(cancellationToken);
-
-            if (!result.IsSuccess)
+            using (MiniProfiler.Current.Step("GetAllUsers Handler"))
             {
-                LoggerService.LogError($"Failed to get all users: {result.Error}");
-                return TypedResults.Problem(result.Error);
-            }
+                LoggerService.LogInformation("Request received: Get all users");
+                var result = await userService.GetAllUsersAsync(cancellationToken);
 
-            LoggerService.LogInformation($"Successfully retrieved {result.Data?.Count ?? 0} users");
-            return TypedResults.Ok(result);
+                if (!result.IsSuccess)
+                {
+                    LoggerService.LogError($"Failed to get all users: {result.Error}");
+                    return TypedResults.Problem(result.Error);
+                }
+
+                LoggerService.LogInformation($"Successfully retrieved {result.Data?.Count ?? 0} users");
+                return TypedResults.Ok(result);
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -35,17 +39,20 @@ namespace MinimalApi_Test.Handlers.User
             IUserService userService,
             CancellationToken cancellationToken)
         {
-            LoggerService.LogInformation($"Request received: Get user by ID {id}");
-            var result = await userService.GetUserByIdAsync(id, cancellationToken);
-
-            if (!result.IsSuccess)
+            using (MiniProfiler.Current.Step($"GetUserById Handler - ID: {id}"))
             {
-                LoggerService.LogWarning($"Failed to get user with ID {id}: {result.Error}");
-                return TypedResults.Problem(result.Error);
-            }
+                LoggerService.LogInformation($"Request received: Get user by ID {id}");
+                var result = await userService.GetUserByIdAsync(id, cancellationToken);
 
-            LoggerService.LogInformation($"Successfully retrieved user with ID {id}");
-            return TypedResults.Ok(result);
+                if (!result.IsSuccess)
+                {
+                    LoggerService.LogWarning($"Failed to get user with ID {id}: {result.Error}");
+                    return TypedResults.Problem(result.Error);
+                }
+
+                LoggerService.LogInformation($"Successfully retrieved user with ID {id}");
+                return TypedResults.Ok(result);
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -54,17 +61,20 @@ namespace MinimalApi_Test.Handlers.User
             IUserService userService,
             CancellationToken cancellationToken)
         {
-            LoggerService.LogInformation($"Request received: Create user with username {createUserDto.Username}");
-            var result = await userService.CreateUserAsync(createUserDto, cancellationToken);
-
-            if (!result.IsSuccess)
+            using (MiniProfiler.Current.Step($"CreateUser Handler - Username: {createUserDto.Username}"))
             {
-                LoggerService.LogWarning($"Failed to create user: {result.Error}");
-                return TypedResults.Problem(result.Error);
-            }
+                LoggerService.LogInformation($"Request received: Create user with username {createUserDto.Username}");
+                var result = await userService.CreateUserAsync(createUserDto, cancellationToken);
 
-            LoggerService.LogInformation($"Successfully created user with ID {result.Data?.Id}");
-            return TypedResults.Created($"/api/users/{result.Data?.Id}", result);
+                if (!result.IsSuccess)
+                {
+                    LoggerService.LogWarning($"Failed to create user: {result.Error}");
+                    return TypedResults.Problem(result.Error);
+                }
+
+                LoggerService.LogInformation($"Successfully created user with ID {result.Data?.Id}");
+                return TypedResults.Created($"/api/users/{result.Data?.Id}", result);
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -74,17 +84,20 @@ namespace MinimalApi_Test.Handlers.User
             IUserService userService,
             CancellationToken cancellationToken)
         {
-            LoggerService.LogInformation($"Request received: Update user with ID {id}");
-            var result = await userService.UpdateUserAsync(id, updateUserDto, cancellationToken);
-
-            if (!result.IsSuccess)
+            using (MiniProfiler.Current.Step($"UpdateUser Handler - ID: {id}"))
             {
-                LoggerService.LogWarning($"Failed to update user with ID {id}: {result.Error}");
-                return TypedResults.Problem(result.Error);
-            }
+                LoggerService.LogInformation($"Request received: Update user with ID {id}");
+                var result = await userService.UpdateUserAsync(id, updateUserDto, cancellationToken);
 
-            LoggerService.LogInformation($"Successfully updated user with ID {id}");
-            return TypedResults.Ok(result);
+                if (!result.IsSuccess)
+                {
+                    LoggerService.LogWarning($"Failed to update user with ID {id}: {result.Error}");
+                    return TypedResults.Problem(result.Error);
+                }
+
+                LoggerService.LogInformation($"Successfully updated user with ID {id}");
+                return TypedResults.Ok(result);
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -93,17 +106,20 @@ namespace MinimalApi_Test.Handlers.User
             IUserService userService,
             CancellationToken cancellationToken)
         {
-            LoggerService.LogInformation($"Request received: Delete user with ID {id}");
-            var result = await userService.DeleteUserAsync(id, cancellationToken);
-
-            if (!result.IsSuccess)
+            using (MiniProfiler.Current.Step($"DeleteUser Handler - ID: {id}"))
             {
-                LoggerService.LogWarning($"Failed to delete user with ID {id}: {result.Error}");
-                return TypedResults.Problem(result.Error);
-            }
+                LoggerService.LogInformation($"Request received: Delete user with ID {id}");
+                var result = await userService.DeleteUserAsync(id, cancellationToken);
 
-            LoggerService.LogInformation($"Successfully deleted user with ID {id}");
-            return TypedResults.Ok(result);
+                if (!result.IsSuccess)
+                {
+                    LoggerService.LogWarning($"Failed to delete user with ID {id}: {result.Error}");
+                    return TypedResults.Problem(result.Error);
+                }
+
+                LoggerService.LogInformation($"Successfully deleted user with ID {id}");
+                return TypedResults.Ok(result);
+            }
         }
 
         public static async Task<IResult> Login(
@@ -112,22 +128,28 @@ namespace MinimalApi_Test.Handlers.User
             CancellationToken cancellationToken,
             IConfiguration configuration)
         {
-            LoggerService.LogInformation($"Login attempt for user: {request.Username}");
-
-            var result = await userService.ValidateCredentialsAsync(
-                request.Username,
-                request.Password,
-                cancellationToken);
-
-            if (!result.IsSuccess || !result.Data.IsValid)
+            using (MiniProfiler.Current.Step($"Login Handler - Username: {request.Username}"))
             {
-                LoggerService.LogWarning($"Failed login attempt for user: {request.Username}");
-                return TypedResults.Unauthorized();
-            }
+                LoggerService.LogInformation($"Login attempt for user: {request.Username}");
 
-            var token = JwtSecurity.GenerateJwtToken(result.Data.User, configuration);
-            LoggerService.LogInformation($"Successful login for user: {request.Username}");
-            return TypedResults.Ok(new LoginResponse { AccessToken = token, UserDto = result.Data.User });
+                var result = await userService.ValidateCredentialsAsync(
+                    request.Username,
+                    request.Password,
+                    cancellationToken);
+
+                if (!result.IsSuccess || !result.Data.IsValid)
+                {
+                    LoggerService.LogWarning($"Failed login attempt for user: {request.Username}");
+                    return TypedResults.Unauthorized();
+                }
+
+                using (MiniProfiler.Current.Step("Generate JWT Token"))
+                {
+                    var token = JwtSecurity.GenerateJwtToken(result.Data.User, configuration);
+                    LoggerService.LogInformation($"Successful login for user: {request.Username}");
+                    return TypedResults.Ok(new LoginResponse { AccessToken = token, UserDto = result.Data.User });
+                }
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -136,17 +158,20 @@ namespace MinimalApi_Test.Handlers.User
             IUserService userService,
             CancellationToken cancellationToken)
         {
-            LoggerService.LogInformation("Request received: Search users");
-            var result = await userService.SearchUsersAsync(searchDto, cancellationToken);
-
-            if (!result.IsSuccess)
+            using (MiniProfiler.Current.Step("SearchUsers Handler"))
             {
-                LoggerService.LogWarning($"Failed to search users: {result.Error}");
-                return TypedResults.Problem(result.Error);
-            }
+                LoggerService.LogInformation("Request received: Search users");
+                var result = await userService.SearchUsersAsync(searchDto, cancellationToken);
 
-            LoggerService.LogInformation($"Successfully searched users. Found {result.Data.Items.Count} items");
-            return TypedResults.Ok(result);
+                if (!result.IsSuccess)
+                {
+                    LoggerService.LogWarning($"Failed to search users: {result.Error}");
+                    return TypedResults.Problem(result.Error);
+                }
+
+                LoggerService.LogInformation($"Successfully searched users. Found {result.Data.Items.Count} items");
+                return TypedResults.Ok(result);
+            }
         }
 
         [Authorize(Roles = "Admin")]
@@ -156,17 +181,20 @@ namespace MinimalApi_Test.Handlers.User
             IUserService userService,
             CancellationToken cancellationToken)
         {
-            LoggerService.LogInformation($"Request received: Patch user with ID {id}");
-            var result = await userService.PatchUserAsync(id, new JsonPatchDocument<PatchUserDto>(), cancellationToken);
-
-            if (!result.IsSuccess)
+            using (MiniProfiler.Current.Step($"PatchUser Handler - ID: {id}"))
             {
-                LoggerService.LogWarning($"Failed to patch user with ID {id}: {result.Error}");
-                return TypedResults.Problem(result.Error);
-            }
+                LoggerService.LogInformation($"Request received: Patch user with ID {id}");
+                var result = await userService.PatchUserAsync(id, new JsonPatchDocument<PatchUserDto>(), cancellationToken);
 
-            LoggerService.LogInformation($"Successfully patched user with ID {id}");
-            return TypedResults.Ok(result);
+                if (!result.IsSuccess)
+                {
+                    LoggerService.LogWarning($"Failed to patch user with ID {id}: {result.Error}");
+                    return TypedResults.Problem(result.Error);
+                }
+
+                LoggerService.LogInformation($"Successfully patched user with ID {id}");
+                return TypedResults.Ok(result);
+            }
         }
     }
 }

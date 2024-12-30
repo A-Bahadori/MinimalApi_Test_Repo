@@ -18,12 +18,15 @@ using MinimalApi_Test.Services.Interfaces;
 using MinimalApi_Test.Validators.User;
 using System.Net;
 using System.Text;
+using Microsoft.Data.SqlClient;
 using Microsoft.OpenApi.Models;
+using StackExchange.Profiling;
 
 #region Containers
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.AddCustomMiniProfiler();
 builder.Services.Configure<FormOptions>(options =>
 {
     options.MultipartBodyLengthLimit = 10 * 1024 * 1024; // محدودیت سایز 10 مگابایت
@@ -42,13 +45,14 @@ builder.Services.AddCors(o =>
             .AllowAnyHeader());
 });
 
-// Add logging
+#region Logging 
+
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Logging.AddDebug();
 builder.Logging.AddFile("Logs/app-{Date}.txt");
 
-// Configure static logger
+#endregion
 
 #region IoC
 
@@ -91,9 +95,20 @@ builder.Services.AddAuthorization();
 
 #region DataBase Context
 
-builder.Services.AddDbContext<AppDbContext>(
-    options => options.UseSqlServer(builder.Configuration["ConnectionStrings:SqlConnectionString"]));
+// builder.Services.AddDbContext<AppDbContext>(
+//     options => options.UseSqlServer(builder.Configuration["ConnectionStrings:SqlConnectionString"]));
 
+// builder.Services.AddDbContext<AppDbContext>(options =>
+// {
+//     options.UseSqlServer(builder.Configuration["ConnectionStrings:SqlConnectionString"])
+//         .EnableSensitiveDataLogging(); // برای مشاهده مقادیر پارامترها
+// });
+
+builder.Services.AddDbContext<AppDbContext>((serviceProvider, options) =>
+{
+    options.UseSqlServer(builder.Configuration["ConnectionStrings:SqlConnectionString"]);
+    options.AddMiniProfilerToDbContext();
+});
 #endregion
 
 #endregion
@@ -102,12 +117,14 @@ builder.Services.AddDbContext<AppDbContext>(
 
 var app = builder.Build();
 
+app.UseCustomMiniProfiler();
+
 // Configure the HTTP request pipeline.
 app.Use(async (context, next) =>
 {
-    // Console.WriteLine($"The request was received: {context.Request.Method} {context.Request.Path}");
+    Console.WriteLine($"The request was received: {context.Request.Method} {context.Request.Path}");
     await next();
-    // Console.WriteLine($"Reply sent: {context.Response.StatusCode}");
+    Console.WriteLine($"Reply sent: {context.Response.StatusCode}");
 });
 
 if (app.Environment.IsDevelopment())
@@ -408,6 +425,28 @@ users.MapPost("/search", UserHandlers.SearchUsers)
 //     .ProducesProblem(400)
 //     .ProducesProblem(404)
 //     .ProducesProblem(500);
+
+#endregion
+
+#region MiniProfilerTests
+
+app.MapGet("/miniprofiler/", () =>
+{
+    using (MiniProfiler.Current.Step("Processing Root Request"))
+    {
+        return "Hello, MiniProfiler with Minimal API!";
+    }
+});
+
+// تست Endpoint دیگر
+app.MapGet("/miniprofiler/slow", async () =>
+{
+    using (MiniProfiler.Current.Step("Simulating Slow Endpoint"))
+    {
+        await Task.Delay(2000); // شبیه‌سازی عملیات زمان‌بر
+        return "This was a slow request!";
+    }
+});
 
 #endregion
 
