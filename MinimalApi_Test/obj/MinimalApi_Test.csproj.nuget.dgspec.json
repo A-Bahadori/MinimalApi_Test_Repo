@@ -110,6 +110,10 @@
               "target": "Package",
               "version": "[4.5.4, )"
             },
+            "MiniProfiler.Providers.SqlServer": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            },
             "Serilog.Extensions.Logging.File": {
               "target": "Package",
               "version": "[9.0.0-dev-02302, )"

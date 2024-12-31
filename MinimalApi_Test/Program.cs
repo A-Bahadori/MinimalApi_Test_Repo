@@ -18,6 +18,7 @@ using MinimalApi_Test.Services.Interfaces;
 using MinimalApi_Test.Validators.User;
 using System.Net;
 using System.Text;
+using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.OpenApi.Models;
 using StackExchange.Profiling;
