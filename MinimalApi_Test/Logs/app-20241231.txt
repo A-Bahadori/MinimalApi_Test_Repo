@@ -1,0 +1,479 @@
+2024-12-31T09:04:31.5228049+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-31T09:04:31.7582068+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-31T09:04:31.7588743+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-31T09:04:31.7627621+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-31T09:04:31.7637008+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-31T09:04:31.7637469+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-31T09:04:32.0655312+03:30 0HN99BJ6OBJBK:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-31T09:04:32.2749093+03:30 0HN99BJ6OBJBK:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 211.8419ms (74253ad3)
+2024-12-31T09:04:32.3787942+03:30 0HN99BJ6OBJBK:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-31T09:04:32.3918944+03:30 0HN99BJ6OBJBK:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-31T09:04:32.5152033+03:30 0HN99BJ6OBJBK:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 136.4392ms (74253ad3)
+2024-12-31T09:04:42.2329483+03:30 0HN99BJ6OBJBK:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - null null (d509f86a)
+2024-12-31T09:04:42.3631644+03:30 0HN99BJ6OBJBK:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - 200 103915 "text/html; charset=utf-8" 130.1947ms (74253ad3)
+2024-12-31T09:04:42.4229726+03:30 0HN99BJ6OBJBK:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/favicon.ico""" - null null (d509f86a)
+2024-12-31T09:04:42.4595994+03:30 0HN99BJ6OBJBK:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/favicon.ico""" - 404 0 null 36.6178ms (74253ad3)
+2024-12-31T09:04:42.4615239+03:30 0HN99BJ6OBJBK:00000007 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7298""""/favicon.ico", Response status code: 404 (e353595a)
+2024-12-31T09:05:08.8216432+03:30 0HN99BJ6OBJBM:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - "application/json" 78 (d509f86a)
+2024-12-31T09:05:08.8307843+03:30 0HN99BJ6OBJBM:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/login => Login"' (500cc934)
+2024-12-31T09:05:09.9542876+03:30 0HN99BJ6OBJBM:00000001 [INF] Login attempt for user: admin@localhost.com (3c8dd274)
+2024-12-31T09:05:10.6781966+03:30 0HN99BJ6OBJBM:00000001 [INF] Executed DbCommand ("102"ms) [Parameters=["@__username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__username_0" (0723d8ff)
+2024-12-31T09:05:10.8060283+03:30 0HN99BJ6OBJBM:00000001 [INF] Successful login for user: admin@localhost.com (d8a9e7cb)
+2024-12-31T09:05:10.8107955+03:30 0HN99BJ6OBJBM:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T09:05:10.8124077+03:30 0HN99BJ6OBJBM:00000001 [INF] Writing value of type '"LoginResponse"' as Json. (785b1510)
+2024-12-31T09:05:10.8189054+03:30 0HN99BJ6OBJBM:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/login => Login"' (99874f2b)
+2024-12-31T09:05:10.8309418+03:30 0HN99BJ6OBJBM:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - 200 null "application/json; charset=utf-8" 2009.4406ms (74253ad3)
+2024-12-31T09:05:15.0087327+03:30 0HN99BJ6OBJBK:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - null null (d509f86a)
+2024-12-31T09:05:15.1518395+03:30 0HN99BJ6OBJBK:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - 200 791898 "text/html; charset=utf-8" 143.0304ms (74253ad3)
+2024-12-31T09:12:27.5977026+03:30  [INF] Application is shutting down... (90f52c38)
+2024-12-31T09:33:37.1595404+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-31T09:33:37.3747253+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-31T09:33:37.3753808+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-31T09:33:37.3790821+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-31T09:33:37.3799199+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-31T09:33:37.3799592+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-31T09:33:37.8193349+03:30 0HN99C3F066DF:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-31T09:33:38.4043688+03:30 0HN99C3F066DF:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 587.0276ms (74253ad3)
+2024-12-31T09:33:38.4797057+03:30 0HN99C3F066DF:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-31T09:33:38.5001034+03:30 0HN99C3F066DF:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-31T09:33:38.6660630+03:30 0HN99C3F066DF:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 186.328ms (74253ad3)
+2024-12-31T09:33:51.0692859+03:30 0HN99C3F066DF:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/test-db""" - null null (d509f86a)
+2024-12-31T09:33:51.1158210+03:30 0HN99C3F066DF:00000005 [INF] Executing endpoint '"HTTP: GET /test-db"' (500cc934)
+2024-12-31T09:33:51.1275169+03:30 0HN99C3F066DF:00000005 [INF] Executed endpoint '"HTTP: GET /test-db"' (99874f2b)
+2024-12-31T09:33:51.1367112+03:30 0HN99C3F066DF:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 661
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__17>d.MoveNext() in D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\Program.cs:line 439
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c.<<<Main>$>b__0_4>d.MoveNext() in D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\Program.cs:line 127
+--- End of stack trace from previous location ---
+   at MiniProfilerExtensions.<>c.<<UseCustomMiniProfiler>b__2_1>d.MoveNext() in D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test\Extensions\MiniProfilerExtensions.cs:line 104
+--- End of stack trace from previous location ---
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 94
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-12-31T09:33:51.1684199+03:30 0HN99C3F066DF:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/test-db""" - 500 null "text/html; charset=utf-8" 99.0829ms (74253ad3)
+2024-12-31T09:34:12.6129538+03:30 0HN99C3F066DF:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/test-db-profiler""" - null null (d509f86a)
+2024-12-31T09:34:12.6202545+03:30 0HN99C3F066DF:00000007 [INF] Executing endpoint '"HTTP: GET /test-db-profiler"' (500cc934)
+2024-12-31T09:34:13.8145190+03:30 0HN99C3F066DF:00000007 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2024-12-31T09:34:14.0278538+03:30 0HN99C3F066DF:00000007 [INF] Executed DbCommand ("36"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-31T09:34:14.0935285+03:30 0HN99C3F066DF:00000007 [INF] Executed DbCommand ("14"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(@__p_0) [u].[Id], [u].[Username], [u].[CreatedAt]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[IsDelete] = CAST(0 AS bit)
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T09:34:14.0986451+03:30 0HN99C3F066DF:00000007 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T09:34:14.1025412+03:30 0HN99C3F066DF:00000007 [INF] Writing value of type '"<>f__AnonymousType1`1"' as Json. (785b1510)
+2024-12-31T09:34:14.1043669+03:30 0HN99C3F066DF:00000007 [INF] Executed endpoint '"HTTP: GET /test-db-profiler"' (99874f2b)
+2024-12-31T09:34:14.1196344+03:30 0HN99C3F066DF:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/test-db-profiler""" - 200 null "application/json; charset=utf-8" 1507.6822ms (74253ad3)
+2024-12-31T09:34:20.7787560+03:30 0HN99C3F066DF:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - null null (d509f86a)
+2024-12-31T09:34:20.7990049+03:30 0HN99C3F066DF:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'MiniProfilers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at StackExchange.Profiling.Storage.SqlServerStorage.ListAsync(Int32 maxResults, Nullable`1 start, Nullable`1 finish, ListResultsOrder orderBy) in C:\projects\dotnet\src\MiniProfiler.Providers.SqlServer\SqlServerStorage.cs:line 361
+   at StackExchange.Profiling.MiniProfilerMiddleware.GetSingleProfilerResultAsync(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 359
+   at StackExchange.Profiling.MiniProfilerMiddleware.HandleRequest(HttpContext context, PathString subPath) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 232
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:cc7b17a4-6f68-429a-91f7-913cf7a88a89
+Error Number:208,State:1,Class:16
+2024-12-31T09:34:20.8027312+03:30 0HN99C3F066DF:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - 500 null "text/html; charset=utf-8" 23.9752ms (74253ad3)
+2024-12-31T09:34:41.2816127+03:30 0HN99C3F066DF:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - null null (d509f86a)
+2024-12-31T09:34:41.2878905+03:30 0HN99C3F066DF:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - 200 739 "text/html; charset=utf-8" 6.2945ms (74253ad3)
+2024-12-31T09:34:41.3464341+03:30 0HN99C3F066DF:0000000D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - "application/json" null (d509f86a)
+2024-12-31T09:34:41.3528620+03:30 0HN99C3F066DF:0000000D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'MiniProfilers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at StackExchange.Profiling.Storage.SqlServerStorage.ListAsync(Int32 maxResults, Nullable`1 start, Nullable`1 finish, ListResultsOrder orderBy) in C:\projects\dotnet\src\MiniProfiler.Providers.SqlServer\SqlServerStorage.cs:line 361
+   at StackExchange.Profiling.MiniProfilerMiddleware.ResultsListAsync(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 308
+   at StackExchange.Profiling.MiniProfilerMiddleware.HandleRequest(HttpContext context, PathString subPath) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 228
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:cc7b17a4-6f68-429a-91f7-913cf7a88a89
+Error Number:208,State:1,Class:16
+2024-12-31T09:34:41.3555822+03:30 0HN99C3F066DF:0000000D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - 500 null "text/plain; charset=utf-8" 9.1271ms (74253ad3)
+2024-12-31T09:34:43.7592738+03:30 0HN99C3F066DF:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - null null (d509f86a)
+2024-12-31T09:34:43.7597235+03:30 0HN99C3F066DF:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - 200 739 "text/html; charset=utf-8" 0.4918ms (74253ad3)
+2024-12-31T09:34:43.8135791+03:30 0HN99C3F066DF:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - "application/json" null (d509f86a)
+2024-12-31T09:34:43.8176863+03:30 0HN99C3F066DF:00000011 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'MiniProfilers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at StackExchange.Profiling.Storage.SqlServerStorage.ListAsync(Int32 maxResults, Nullable`1 start, Nullable`1 finish, ListResultsOrder orderBy) in C:\projects\dotnet\src\MiniProfiler.Providers.SqlServer\SqlServerStorage.cs:line 361
+   at StackExchange.Profiling.MiniProfilerMiddleware.ResultsListAsync(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 308
+   at StackExchange.Profiling.MiniProfilerMiddleware.HandleRequest(HttpContext context, PathString subPath) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 228
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:cc7b17a4-6f68-429a-91f7-913cf7a88a89
+Error Number:208,State:1,Class:16
+2024-12-31T09:34:43.8188436+03:30 0HN99C3F066DF:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - 500 null "text/plain; charset=utf-8" 5.2541ms (74253ad3)
+2024-12-31T09:34:54.1624434+03:30 0HN99C3F066DF:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - null null (d509f86a)
+2024-12-31T09:34:54.1628920+03:30 0HN99C3F066DF:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - 200 739 "text/html; charset=utf-8" 0.4601ms (74253ad3)
+2024-12-31T09:34:54.2128392+03:30 0HN99C3F066DF:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - "application/json" null (d509f86a)
+2024-12-31T09:34:54.2165761+03:30 0HN99C3F066DF:00000015 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'MiniProfilers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at StackExchange.Profiling.Storage.SqlServerStorage.ListAsync(Int32 maxResults, Nullable`1 start, Nullable`1 finish, ListResultsOrder orderBy) in C:\projects\dotnet\src\MiniProfiler.Providers.SqlServer\SqlServerStorage.cs:line 361
+   at StackExchange.Profiling.MiniProfilerMiddleware.ResultsListAsync(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 308
+   at StackExchange.Profiling.MiniProfilerMiddleware.HandleRequest(HttpContext context, PathString subPath) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 228
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:cc7b17a4-6f68-429a-91f7-913cf7a88a89
+Error Number:208,State:1,Class:16
+2024-12-31T09:34:54.2175709+03:30 0HN99C3F066DF:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - 500 null "text/plain; charset=utf-8" 4.7411ms (74253ad3)
+2024-12-31T09:35:04.0710001+03:30 0HN99C3F066DH:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - "application/json" 78 (d509f86a)
+2024-12-31T09:35:04.0807610+03:30 0HN99C3F066DH:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/login => Login"' (500cc934)
+2024-12-31T09:35:04.2711448+03:30 0HN99C3F066DH:00000001 [INF] Login attempt for user: admin@localhost.com (3c8dd274)
+2024-12-31T09:35:04.2980122+03:30 0HN99C3F066DH:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__username_0" (0723d8ff)
+2024-12-31T09:35:04.4050592+03:30 0HN99C3F066DH:00000001 [INF] Successful login for user: admin@localhost.com (d8a9e7cb)
+2024-12-31T09:35:04.4058859+03:30 0HN99C3F066DH:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T09:35:04.4113857+03:30 0HN99C3F066DH:00000001 [INF] Writing value of type '"LoginResponse"' as Json. (785b1510)
+2024-12-31T09:35:04.4201108+03:30 0HN99C3F066DH:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/login => Login"' (99874f2b)
+2024-12-31T09:35:04.4240174+03:30 0HN99C3F066DH:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - 200 null "application/json; charset=utf-8" 353.2359ms (74253ad3)
+2024-12-31T09:35:07.0193270+03:30 0HN99C3F066DF:00000017 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - null null (d509f86a)
+2024-12-31T09:35:07.0196762+03:30 0HN99C3F066DF:00000017 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - 200 739 "text/html; charset=utf-8" 0.4136ms (74253ad3)
+2024-12-31T09:35:07.0666848+03:30 0HN99C3F066DF:00000019 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - "application/json" null (d509f86a)
+2024-12-31T09:35:07.0703769+03:30 0HN99C3F066DF:00000019 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'MiniProfilers'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__195_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at StackExchange.Profiling.Storage.SqlServerStorage.ListAsync(Int32 maxResults, Nullable`1 start, Nullable`1 finish, ListResultsOrder orderBy) in C:\projects\dotnet\src\MiniProfiler.Providers.SqlServer\SqlServerStorage.cs:line 361
+   at StackExchange.Profiling.MiniProfilerMiddleware.ResultsListAsync(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 308
+   at StackExchange.Profiling.MiniProfilerMiddleware.HandleRequest(HttpContext context, PathString subPath) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 228
+   at StackExchange.Profiling.MiniProfilerMiddleware.Invoke(HttpContext context) in C:\projects\dotnet\src\MiniProfiler.AspNetCore\MiniProfilerMiddleware.cs:line 64
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:cc7b17a4-6f68-429a-91f7-913cf7a88a89
+Error Number:208,State:1,Class:16
+2024-12-31T09:35:07.0712134+03:30 0HN99C3F066DF:00000019 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - 500 null "text/plain; charset=utf-8" 4.5111ms (74253ad3)
+2024-12-31T09:35:14.5104170+03:30  [INF] Application is shutting down... (90f52c38)
+2024-12-31T09:35:45.1282442+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-31T09:35:45.3510628+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-31T09:35:45.3517367+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-31T09:35:45.3554924+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-31T09:35:45.3562966+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-31T09:35:45.3563283+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-31T09:35:45.8707291+03:30 0HN99C4L64SC8:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-31T09:35:46.0836362+03:30 0HN99C4L64SC8:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 216.3723ms (74253ad3)
+2024-12-31T09:35:46.2160112+03:30 0HN99C4L64SC8:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-31T09:35:46.2313934+03:30 0HN99C4L64SC8:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-31T09:35:46.3785448+03:30 0HN99C4L64SC8:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 162.7992ms (74253ad3)
+2024-12-31T09:35:49.8264587+03:30 0HN99C4L64SC8:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - null null (d509f86a)
+2024-12-31T09:35:49.9464887+03:30 0HN99C4L64SC8:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - 200 125473 "text/html; charset=utf-8" 119.8745ms (74253ad3)
+2024-12-31T09:35:57.9341097+03:30 0HN99C4L64SCA:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - "application/json" 78 (d509f86a)
+2024-12-31T09:35:57.9742746+03:30 0HN99C4L64SCA:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/login => Login"' (500cc934)
+2024-12-31T09:35:59.0243766+03:30 0HN99C4L64SCA:00000001 [INF] Login attempt for user: admin@localhost.com (3c8dd274)
+2024-12-31T09:35:59.6437608+03:30 0HN99C4L64SCA:00000001 [INF] Executed DbCommand ("61"ms) [Parameters=["@__username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__username_0" (0723d8ff)
+2024-12-31T09:35:59.7738270+03:30 0HN99C4L64SCA:00000001 [INF] Successful login for user: admin@localhost.com (d8a9e7cb)
+2024-12-31T09:35:59.7783010+03:30 0HN99C4L64SCA:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T09:35:59.7798802+03:30 0HN99C4L64SCA:00000001 [INF] Writing value of type '"LoginResponse"' as Json. (785b1510)
+2024-12-31T09:35:59.7854315+03:30 0HN99C4L64SCA:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/login => Login"' (99874f2b)
+2024-12-31T09:35:59.7984552+03:30 0HN99C4L64SCA:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - 200 null "application/json; charset=utf-8" 1864.4531ms (74253ad3)
+2024-12-31T09:36:01.5479695+03:30 0HN99C4L64SC8:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - null null (d509f86a)
+2024-12-31T09:36:01.6927962+03:30 0HN99C4L64SC8:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - 200 791897 "text/html; charset=utf-8" 144.7499ms (74253ad3)
+2024-12-31T09:59:10.7115786+03:30  [INF] Application is shutting down... (90f52c38)
+2024-12-31T10:01:49.5871998+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-31T10:01:49.8005921+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-31T10:01:49.8012186+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-31T10:01:49.8049418+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-31T10:01:49.8057648+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-31T10:01:49.8058033+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-31T10:01:50.2369383+03:30 0HN99CJ7D41KR:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-31T10:01:50.4389353+03:30 0HN99CJ7D41KR:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 204.7779ms (74253ad3)
+2024-12-31T10:01:50.5356922+03:30 0HN99CJ7D41KR:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-31T10:01:50.5460547+03:30 0HN99CJ7D41KR:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-31T10:01:50.6517292+03:30 0HN99CJ7D41KR:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 116.075ms (74253ad3)
+2024-12-31T10:03:35.0440099+03:30  [INF] Application is shutting down... (90f52c38)
+2024-12-31T10:03:39.3775474+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-31T10:03:39.5963095+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-31T10:03:39.5969217+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-31T10:03:39.6005238+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-31T10:03:39.6012894+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-31T10:03:39.6013312+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-31T10:03:40.7031645+03:30 0HN99CK85I8JV:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-31T10:03:40.9465589+03:30 0HN99CK85I8JV:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 248.1724ms (74253ad3)
+2024-12-31T10:03:41.1494605+03:30 0HN99CK85I8JV:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-31T10:03:41.1634005+03:30 0HN99CK85I8JV:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-31T10:03:41.3022946+03:30 0HN99CK85I8JV:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 152.9207ms (74253ad3)
+2024-12-31T10:05:20.4816383+03:30 0HN99CK85I8K0:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - "application/json" 64 (d509f86a)
+2024-12-31T10:05:20.5120951+03:30 0HN99CK85I8K0:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/login => Login"' (500cc934)
+2024-12-31T10:05:21.3517442+03:30 0HN99CK85I8K0:00000001 [INF] Login attempt for user: admin@localhost.com (3c8dd274)
+2024-12-31T10:05:21.8812800+03:30 0HN99CK85I8K0:00000001 [INF] Executed DbCommand ("58"ms) [Parameters=["@__username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__username_0" (0723d8ff)
+2024-12-31T10:05:21.9994550+03:30 0HN99CK85I8K0:00000001 [INF] Successful login for user: admin@localhost.com (d8a9e7cb)
+2024-12-31T10:05:22.0035579+03:30 0HN99CK85I8K0:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T10:05:22.0095674+03:30 0HN99CK85I8K0:00000001 [INF] Writing value of type '"LoginResponse"' as Json. (785b1510)
+2024-12-31T10:05:22.0152683+03:30 0HN99CK85I8K0:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/login => Login"' (99874f2b)
+2024-12-31T10:05:22.0253601+03:30 0HN99CK85I8K0:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - 200 null "application/json; charset=utf-8" 1544.0177ms (74253ad3)
+2024-12-31T10:05:33.9769543+03:30 0HN99CK85I8K0:00000002 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 133 (d509f86a)
+2024-12-31T10:05:34.0297010+03:30 0HN99CK85I8K0:00000002 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T10:05:34.0739642+03:30 0HN99CK85I8K0:00000002 [INF] Request received: Search users (aa062f35)
+2024-12-31T10:05:34.1386363+03:30 0HN99CK85I8K0:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-31T10:05:34.1523386+03:30 0HN99CK85I8K0:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T10:05:34.1634474+03:30 0HN99CK85I8K0:00000002 [INF] Successfully searched users. Found 5 items (ff34a0eb)
+2024-12-31T10:05:34.1636859+03:30 0HN99CK85I8K0:00000002 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T10:05:34.1669536+03:30 0HN99CK85I8K0:00000002 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T10:05:34.1691254+03:30 0HN99CK85I8K0:00000002 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T10:05:34.1696100+03:30 0HN99CK85I8K0:00000002 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 192.6988ms (74253ad3)
+2024-12-31T10:05:43.9441197+03:30 0HN99CK85I8K0:00000003 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 133 (d509f86a)
+2024-12-31T10:05:43.9502810+03:30 0HN99CK85I8K0:00000003 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T10:05:43.9611787+03:30 0HN99CK85I8K0:00000003 [INF] Request received: Search users (aa062f35)
+2024-12-31T10:05:43.9672667+03:30 0HN99CK85I8K0:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-31T10:05:43.9714722+03:30 0HN99CK85I8K0:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T10:05:43.9740627+03:30 0HN99CK85I8K0:00000003 [INF] Successfully searched users. Found 5 items (ff34a0eb)
+2024-12-31T10:05:43.9741719+03:30 0HN99CK85I8K0:00000003 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T10:05:43.9742103+03:30 0HN99CK85I8K0:00000003 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T10:05:43.9750287+03:30 0HN99CK85I8K0:00000003 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T10:05:43.9753908+03:30 0HN99CK85I8K0:00000003 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 31.3262ms (74253ad3)
+2024-12-31T10:06:01.6100881+03:30 0HN99CK85I8K1:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 179 (d509f86a)
+2024-12-31T10:06:01.6130298+03:30 0HN99CK85I8K1:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T10:06:01.6153883+03:30 0HN99CK85I8K1:00000001 [INF] Request received: Search users (aa062f35)
+2024-12-31T10:06:01.6281092+03:30 0HN99CK85I8K1:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__searchDto_CreatedFromDate_Value_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[CreatedAt] >= @__searchDto_CreatedFromDate_Value_0" (0723d8ff)
+2024-12-31T10:06:01.6363167+03:30 0HN99CK85I8K1:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__searchDto_CreatedFromDate_Value_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[CreatedAt] >= @__searchDto_CreatedFromDate_Value_0
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T10:06:01.6371217+03:30 0HN99CK85I8K1:00000001 [INF] Successfully searched users. Found 4 items (0bb8a141)
+2024-12-31T10:06:01.6372113+03:30 0HN99CK85I8K1:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T10:06:01.6372458+03:30 0HN99CK85I8K1:00000001 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T10:06:01.6374299+03:30 0HN99CK85I8K1:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T10:06:01.6376728+03:30 0HN99CK85I8K1:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 27.6123ms (74253ad3)
+2024-12-31T10:06:34.8415647+03:30 0HN99CK85I8K1:00000002 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 133 (d509f86a)
+2024-12-31T10:06:34.8442030+03:30 0HN99CK85I8K1:00000002 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T10:06:34.8459599+03:30 0HN99CK85I8K1:00000002 [INF] Request received: Search users (aa062f35)
+2024-12-31T10:06:34.8551385+03:30 0HN99CK85I8K1:00000002 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-31T10:06:34.8605926+03:30 0HN99CK85I8K1:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T10:06:34.8618460+03:30 0HN99CK85I8K1:00000002 [INF] Successfully searched users. Found 5 items (ff34a0eb)
+2024-12-31T10:06:34.8619792+03:30 0HN99CK85I8K1:00000002 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T10:06:34.8620504+03:30 0HN99CK85I8K1:00000002 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T10:06:34.8623263+03:30 0HN99CK85I8K1:00000002 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T10:06:34.8626837+03:30 0HN99CK85I8K1:00000002 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 21.1859ms (74253ad3)
+2024-12-31T10:06:41.2872008+03:30 0HN99CK85I8K1:00000003 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 133 (d509f86a)
+2024-12-31T10:06:41.2895068+03:30 0HN99CK85I8K1:00000003 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T10:06:41.2910900+03:30 0HN99CK85I8K1:00000003 [INF] Request received: Search users (aa062f35)
+2024-12-31T10:06:41.2935634+03:30 0HN99CK85I8K1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-31T10:06:41.2974310+03:30 0HN99CK85I8K1:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T10:06:41.2985257+03:30 0HN99CK85I8K1:00000003 [INF] Successfully searched users. Found 5 items (ff34a0eb)
+2024-12-31T10:06:41.2986039+03:30 0HN99CK85I8K1:00000003 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T10:06:41.2986610+03:30 0HN99CK85I8K1:00000003 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T10:06:41.2990366+03:30 0HN99CK85I8K1:00000003 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T10:06:41.2994072+03:30 0HN99CK85I8K1:00000003 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 12.2456ms (74253ad3)
+2024-12-31T10:33:22.3504365+03:30  [INF] Application is shutting down... (90f52c38)
+2024-12-31T10:52:13.7398431+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-31T10:52:13.9862014+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-31T10:52:13.9868223+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-31T10:52:13.9904228+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-31T10:52:13.9911676+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-31T10:52:13.9912059+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-31T10:52:15.2034969+03:30 0HN99DFCMHEEJ:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-31T10:52:15.5273791+03:30 0HN99DFCMHEEJ:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 328.8395ms (74253ad3)
+2024-12-31T10:52:15.6951880+03:30 0HN99DFCMHEEJ:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-31T10:52:15.7065852+03:30 0HN99DFCMHEEJ:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-31T10:52:15.8201690+03:30 0HN99DFCMHEEJ:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 124.9777ms (74253ad3)
+2024-12-31T10:52:30.9087461+03:30 0HN99DFCMHEEK:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""" - null null (d509f86a)
+2024-12-31T10:52:30.9350486+03:30 0HN99DFCMHEEK:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""" - 200 466 null 26.2895ms (74253ad3)
+2024-12-31T10:52:30.9739140+03:30 0HN99DFCMHEEK:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/favicon.ico""" - null null (d509f86a)
+2024-12-31T10:52:31.0025119+03:30 0HN99DFCMHEEK:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/favicon.ico""" - 404 0 null 28.5234ms (74253ad3)
+2024-12-31T10:52:31.0044904+03:30 0HN99DFCMHEEK:00000003 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7298""""/favicon.ico", Response status code: 404 (e353595a)
+2024-12-31T10:55:22.0569488+03:30  [INF] Application is shutting down... (90f52c38)
+2024-12-31T16:31:26.3200194+03:30  [INF] User profile is available. Using '"C:\Users\abbas\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-12-31T16:31:26.5288592+03:30  [INF] Now listening on: "https://localhost:7298" (d826f4b8)
+2024-12-31T16:31:26.5294505+03:30  [INF] Now listening on: "http://localhost:5129" (d826f4b8)
+2024-12-31T16:31:26.5330453+03:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-12-31T16:31:26.5337681+03:30  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-12-31T16:31:26.5338031+03:30  [INF] Content root path: "D:\Programming\C#_Projects\ASP.NET_Core\Minimal Api\MinimalApi_Test\MinimalApi_Test" (cc26f24e)
+2024-12-31T16:31:27.5342834+03:30 0HN99JCU8MNMA:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - null null (d509f86a)
+2024-12-31T16:31:27.7347933+03:30 0HN99JCU8MNMA:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 203.0021ms (74253ad3)
+2024-12-31T16:31:28.5358261+03:30 0HN99JCU8MNMA:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - null null (d509f86a)
+2024-12-31T16:31:28.5454860+03:30 0HN99JCU8MNMA:00000003 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts (903d179d)
+2024-12-31T16:31:28.6556011+03:30 0HN99JCU8MNMA:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 119.8678ms (74253ad3)
+2024-12-31T16:32:43.5101213+03:30 0HN99JCU8MNMB:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - null null (d509f86a)
+2024-12-31T16:32:43.6081286+03:30 0HN99JCU8MNMB:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""" - 200 125472 "text/html; charset=utf-8" 97.9877ms (74253ad3)
+2024-12-31T16:32:43.6490476+03:30 0HN99JCU8MNMB:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/favicon.ico""" - null null (d509f86a)
+2024-12-31T16:32:43.6727204+03:30 0HN99JCU8MNMB:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/favicon.ico""" - 404 0 null 23.6316ms (74253ad3)
+2024-12-31T16:32:43.6741606+03:30 0HN99JCU8MNMB:00000003 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7298""""/favicon.ico", Response status code: 404 (e353595a)
+2024-12-31T16:32:49.9198735+03:30 0HN99JCU8MNMB:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - null null (d509f86a)
+2024-12-31T16:32:49.9224942+03:30 0HN99JCU8MNMB:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - 200 739 "text/html; charset=utf-8" 2.6321ms (74253ad3)
+2024-12-31T16:32:49.9614084+03:30 0HN99JCU8MNMB:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - "application/json" null (d509f86a)
+2024-12-31T16:32:49.9753278+03:30 0HN99JCU8MNMB:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - 200 463 null 13.8975ms (74253ad3)
+2024-12-31T16:32:53.9894251+03:30 0HN99JCU8MNMB:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=b1b3eb0d-fb8f-481e-9a97-8650afe4df50" - "application/json" null (d509f86a)
+2024-12-31T16:32:53.9917674+03:30 0HN99JCU8MNMB:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=b1b3eb0d-fb8f-481e-9a97-8650afe4df50" - 200 2 null 2.3684ms (74253ad3)
+2024-12-31T16:32:55.3534531+03:30 0HN99JCU8MNMB:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""" - null null (d509f86a)
+2024-12-31T16:32:55.3538212+03:30 0HN99JCU8MNMB:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""" - 200 463 null 0.3723ms (74253ad3)
+2024-12-31T16:33:02.4979139+03:30 0HN99JCU8MNMB:0000000D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - null null (d509f86a)
+2024-12-31T16:33:02.4981354+03:30 0HN99JCU8MNMB:0000000D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-index""" - 200 739 "text/html; charset=utf-8" 0.2522ms (74253ad3)
+2024-12-31T16:33:02.5371968+03:30 0HN99JCU8MNMB:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - "application/json" null (d509f86a)
+2024-12-31T16:33:02.5376643+03:30 0HN99JCU8MNMB:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results-list""?last-id=undefined" - 200 463 null 0.5386ms (74253ad3)
+2024-12-31T16:33:05.0777506+03:30 0HN99JCU8MNMB:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""?id=b1b3eb0d-fb8f-481e-9a97-8650afe4df50" - null null (d509f86a)
+2024-12-31T16:33:05.0911703+03:30 0HN99JCU8MNMB:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:7298""""/profiler/results""?id=b1b3eb0d-fb8f-481e-9a97-8650afe4df50" - 200 125472 "text/html; charset=utf-8" 13.4011ms (74253ad3)
+2024-12-31T16:33:54.2565581+03:30 0HN99JCU8MNMC:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - "application/json" 64 (d509f86a)
+2024-12-31T16:33:54.2600018+03:30 0HN99JCU8MNMC:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/login => Login"' (500cc934)
+2024-12-31T16:33:55.1091327+03:30 0HN99JCU8MNMC:00000001 [INF] Login attempt for user: admin@localhost.com (3c8dd274)
+2024-12-31T16:33:55.6438924+03:30 0HN99JCU8MNMC:00000001 [INF] Executed DbCommand ("60"ms) [Parameters=["@__username_0='?' (Size = 200)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[Username] = @__username_0" (0723d8ff)
+2024-12-31T16:33:55.7620250+03:30 0HN99JCU8MNMC:00000001 [INF] Successful login for user: admin@localhost.com (d8a9e7cb)
+2024-12-31T16:33:55.7658130+03:30 0HN99JCU8MNMC:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T16:33:55.7666627+03:30 0HN99JCU8MNMC:00000001 [INF] Writing value of type '"LoginResponse"' as Json. (785b1510)
+2024-12-31T16:33:55.7712467+03:30 0HN99JCU8MNMC:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/login => Login"' (99874f2b)
+2024-12-31T16:33:55.7815518+03:30 0HN99JCU8MNMC:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/login""" - 200 null "application/json; charset=utf-8" 1525.0039ms (74253ad3)
+2024-12-31T16:35:00.2335947+03:30 0HN99JCU8MNMC:00000002 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 133 (d509f86a)
+2024-12-31T16:35:00.2824597+03:30 0HN99JCU8MNMC:00000002 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T16:35:00.3262682+03:30 0HN99JCU8MNMC:00000002 [INF] Request received: Search users (aa062f35)
+2024-12-31T16:35:00.3927301+03:30 0HN99JCU8MNMC:00000002 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-31T16:35:00.4052707+03:30 0HN99JCU8MNMC:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T16:35:00.4157318+03:30 0HN99JCU8MNMC:00000002 [INF] Successfully searched users. Found 5 items (ff34a0eb)
+2024-12-31T16:35:00.4159235+03:30 0HN99JCU8MNMC:00000002 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T16:35:00.4185858+03:30 0HN99JCU8MNMC:00000002 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T16:35:00.4207106+03:30 0HN99JCU8MNMC:00000002 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T16:35:00.4213233+03:30 0HN99JCU8MNMC:00000002 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 187.7591ms (74253ad3)
+2024-12-31T16:35:13.2267188+03:30 0HN99JCU8MNMC:00000003 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 179 (d509f86a)
+2024-12-31T16:35:13.2312173+03:30 0HN99JCU8MNMC:00000003 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T16:35:13.2430053+03:30 0HN99JCU8MNMC:00000003 [INF] Request received: Search users (aa062f35)
+2024-12-31T16:35:13.2531619+03:30 0HN99JCU8MNMC:00000003 [INF] Executed DbCommand ("4"ms) [Parameters=["@__searchDto_CreatedFromDate_Value_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[CreatedAt] >= @__searchDto_CreatedFromDate_Value_0" (0723d8ff)
+2024-12-31T16:35:13.2614664+03:30 0HN99JCU8MNMC:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@__searchDto_CreatedFromDate_Value_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[CreatedAt] >= @__searchDto_CreatedFromDate_Value_0
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T16:35:13.2630287+03:30 0HN99JCU8MNMC:00000003 [INF] Successfully searched users. Found 0 items (607b7d2e)
+2024-12-31T16:35:13.2630829+03:30 0HN99JCU8MNMC:00000003 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T16:35:13.2631159+03:30 0HN99JCU8MNMC:00000003 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T16:35:13.2632551+03:30 0HN99JCU8MNMC:00000003 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T16:35:13.2635334+03:30 0HN99JCU8MNMC:00000003 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 36.8527ms (74253ad3)
+2024-12-31T16:35:18.5342659+03:30 0HN99JCU8MNMC:00000004 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 179 (d509f86a)
+2024-12-31T16:35:18.5369919+03:30 0HN99JCU8MNMC:00000004 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T16:35:18.5380716+03:30 0HN99JCU8MNMC:00000004 [INF] Request received: Search users (aa062f35)
+2024-12-31T16:35:18.5450358+03:30 0HN99JCU8MNMC:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__searchDto_CreatedFromDate_Value_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[CreatedAt] >= @__searchDto_CreatedFromDate_Value_0" (0723d8ff)
+2024-12-31T16:35:18.5501496+03:30 0HN99JCU8MNMC:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__searchDto_CreatedFromDate_Value_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit) AND [u].[CreatedAt] >= @__searchDto_CreatedFromDate_Value_0
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T16:35:18.5512872+03:30 0HN99JCU8MNMC:00000004 [INF] Successfully searched users. Found 4 items (0bb8a141)
+2024-12-31T16:35:18.5513264+03:30 0HN99JCU8MNMC:00000004 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T16:35:18.5513540+03:30 0HN99JCU8MNMC:00000004 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T16:35:18.5515376+03:30 0HN99JCU8MNMC:00000004 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T16:35:18.5517787+03:30 0HN99JCU8MNMC:00000004 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 17.5354ms (74253ad3)
+2024-12-31T16:35:26.7120499+03:30 0HN99JCU8MNMD:00000001 [INF] Request starting "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - "application/json" 133 (d509f86a)
+2024-12-31T16:35:26.7139486+03:30 0HN99JCU8MNMD:00000001 [INF] Executing endpoint '"HTTP: POST /api/users/search => SearchUsers"' (500cc934)
+2024-12-31T16:35:26.7150331+03:30 0HN99JCU8MNMD:00000001 [INF] Request received: Search users (aa062f35)
+2024-12-31T16:35:26.7174964+03:30 0HN99JCU8MNMD:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)" (0723d8ff)
+2024-12-31T16:35:26.7214575+03:30 0HN99JCU8MNMD:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[CreatedAt], [u].[DeletedAt], [u].[FirstName], [u].[IsDelete], [u].[LastName], [u].[ModifiedAt], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[IsDelete] = CAST(0 AS bit)
+ORDER BY [u].[CreatedAt] DESC" (0723d8ff)
+2024-12-31T16:35:26.7220367+03:30 0HN99JCU8MNMD:00000001 [INF] Successfully searched users. Found 5 items (ff34a0eb)
+2024-12-31T16:35:26.7220824+03:30 0HN99JCU8MNMD:00000001 [INF] Setting HTTP status code 200. (55f20fcf)
+2024-12-31T16:35:26.7221218+03:30 0HN99JCU8MNMD:00000001 [INF] Writing value of type '"ResultCustom`1"' as Json. (785b1510)
+2024-12-31T16:35:26.7223149+03:30 0HN99JCU8MNMD:00000001 [INF] Executed endpoint '"HTTP: POST /api/users/search => SearchUsers"' (99874f2b)
+2024-12-31T16:35:26.7225756+03:30 0HN99JCU8MNMD:00000001 [INF] Request finished "HTTP/1.1" "POST" "https"://"localhost:7298""""/api/users/search""" - 200 null "application/json; charset=utf-8" 10.5633ms (74253ad3)
+2024-12-31T16:35:56.6081171+03:30  [INF] Application is shutting down... (90f52c38)
